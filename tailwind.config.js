@@ -1,7 +1,7 @@
 module.exports = {
   purge: {
-    // enabled: true,
-    // content: ['./src/**/*.html', './src/**/*.ts'],
+    enabled: true,
+    content: ['./src/**/*.html', './src/**/*.ts'],
   },
   theme: {
     extend: {
@@ -14,9 +14,12 @@ module.exports = {
       },
       fontFamily: {
         body: ['Nunito']
-      }
+      },
+      boxShadow: {
+        blue: '0 4px 14px 0 rgba(19, 51, 81, 0.39)',
+      },
     },
   },
-  variants: {},
+  variants: ['responsive', 'group-hover', 'group-focus', 'focus-within', 'first', 'last', 'odd', 'even', 'hover', 'focus', 'active', 'visited', 'disabled'],
   plugins: [],
 }
